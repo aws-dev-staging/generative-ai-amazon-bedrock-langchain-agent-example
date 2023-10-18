@@ -76,7 +76,7 @@ chmod u+x create-stack.sh
 Next, set your Amplify Repository and GitHub PAT environment variables created during the pre-deployment steps:
 
 ```sh
-export AMPLIFY_REPOSITORY=<YOUR-FORKED-REPOSITORY-URL> # Forked repository URL from Pre-Deployment
+export AMPLIFY_REPOSITORY=<YOUR-FORKED-REPOSITORY-URL> # Forked repository URL from Pre-Deployment (excluding ".git")
 export GITHUB_PAT=<YOUR-GITHUB-PAT> # GitHub PAT copied from Pre-Deployment
 export STACK_NAME=<YOUR-STACK-NAME> # Stack name must be lower case for S3 bucket naming convention
 export KENDRA_WEBCRAWLER_URL=<YOUR-WEBSITE-ROOT-DOMAIN> # Public or internal HTTPS website for Kendra to index via Web Crawler (e.g., https://www.nerdwallet.com) - Please see https://docs.aws.amazon.com/kendra/latest/dg/data-source-web-crawler.html
